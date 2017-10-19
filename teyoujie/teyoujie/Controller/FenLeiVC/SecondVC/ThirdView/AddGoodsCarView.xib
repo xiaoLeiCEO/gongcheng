@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddGoodsCarView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-p7-Sli">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="collect_an" translatesAutoresizingMaskIntoConstraints="NO" id="Dm4-jg-kqN">
+                            <rect key="frame" x="14" y="10" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Ncq-iK-15A"/>
+                                <constraint firstAttribute="width" constant="20" id="m5Q-QY-5GL"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收藏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZf-qs-djt">
+                            <rect key="frame" x="4" y="29" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="42" id="m2V-xA-beJ"/>
+                                <constraint firstAttribute="height" constant="21" id="mcV-rn-akv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3U-iU-lrq">
+                            <rect key="frame" x="2" y="4" width="46" height="46"/>
+                            <connections>
+                                <action selector="collectClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="uHH-Gj-tOL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sZf-qs-djt" firstAttribute="top" secondItem="Dm4-jg-kqN" secondAttribute="bottom" constant="-1" id="1x4-yN-ii3"/>
+                        <constraint firstItem="C3U-iU-lrq" firstAttribute="top" secondItem="Yfl-p7-Sli" secondAttribute="top" constant="4" id="ILd-t2-gxf"/>
+                        <constraint firstAttribute="width" constant="50" id="KZ2-46-OTG"/>
+                        <constraint firstItem="Dm4-jg-kqN" firstAttribute="top" secondItem="Yfl-p7-Sli" secondAttribute="top" constant="10" id="RvR-su-vpg"/>
+                        <constraint firstItem="C3U-iU-lrq" firstAttribute="leading" secondItem="Yfl-p7-Sli" secondAttribute="leading" constant="2" id="Srz-hh-Quz"/>
+                        <constraint firstAttribute="trailing" secondItem="sZf-qs-djt" secondAttribute="trailing" constant="4" id="c2O-pO-ieK"/>
+                        <constraint firstAttribute="height" constant="50" id="ehi-Ws-ANR"/>
+                        <constraint firstAttribute="trailing" secondItem="Dm4-jg-kqN" secondAttribute="trailing" constant="16" id="fxE-I8-61v"/>
+                        <constraint firstAttribute="trailing" secondItem="C3U-iU-lrq" secondAttribute="trailing" constant="2" id="kXx-jK-Hmj"/>
+                        <constraint firstAttribute="bottom" secondItem="C3U-iU-lrq" secondAttribute="bottom" id="mgk-8R-4Ai"/>
+                        <constraint firstItem="Dm4-jg-kqN" firstAttribute="leading" secondItem="Yfl-p7-Sli" secondAttribute="leading" constant="14" id="pA6-xK-gDr"/>
+                        <constraint firstItem="sZf-qs-djt" firstAttribute="leading" secondItem="Yfl-p7-Sli" secondAttribute="leading" constant="4" id="shR-ze-QdA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yfl-p7-Sli" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HJb-S3-AFX"/>
+                <constraint firstItem="Yfl-p7-Sli" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JCg-cR-wBu"/>
+                <constraint firstAttribute="bottom" secondItem="Yfl-p7-Sli" secondAttribute="bottom" id="xKU-dl-rY8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectImage" destination="Dm4-jg-kqN" id="zc0-SN-Js8"/>
+            </connections>
+            <point key="canvasLocation" x="77" y="-185"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="collect_an" width="16" height="16"/>
+    </resources>
+</document>
