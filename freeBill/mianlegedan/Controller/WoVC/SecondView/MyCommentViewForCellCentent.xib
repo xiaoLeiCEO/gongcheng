@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyCommentViewForCellCentent">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CTQ-3s-MzO">
+                    <rect key="frame" x="10" y="8" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="en9-V6-Umb"/>
+                        <constraint firstAttribute="width" constant="45" id="jfR-Ao-gS0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小城故事酒店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWR-oF-cDO">
+                    <rect key="frame" x="70" y="12" width="223" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="pWl-Rj-uZU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平江区 经济型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNs-8C-maa">
+                    <rect key="frame" x="70" y="37" width="228" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="b3q-vy-IUd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iWR-oF-cDO" secondAttribute="trailing" constant="27" id="0M4-mQ-zcX"/>
+                <constraint firstItem="iWR-oF-cDO" firstAttribute="leading" secondItem="CTQ-3s-MzO" secondAttribute="trailing" constant="15" id="6cL-iF-dvW"/>
+                <constraint firstItem="kNs-8C-maa" firstAttribute="top" secondItem="iWR-oF-cDO" secondAttribute="bottom" constant="4" id="L7o-v9-y3E"/>
+                <constraint firstAttribute="trailing" secondItem="kNs-8C-maa" secondAttribute="trailing" constant="22" id="RKm-if-wKc"/>
+                <constraint firstItem="iWR-oF-cDO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="VRW-x6-Lvl"/>
+                <constraint firstItem="CTQ-3s-MzO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="cFt-jI-cuh"/>
+                <constraint firstItem="CTQ-3s-MzO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="fZ2-1M-UEG"/>
+                <constraint firstItem="kNs-8C-maa" firstAttribute="leading" secondItem="CTQ-3s-MzO" secondAttribute="trailing" constant="15" id="v7F-Oj-4oV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ImageViewForContent" destination="CTQ-3s-MzO" id="FtK-Cd-Agw"/>
+                <outlet property="detailLabelForContent" destination="kNs-8C-maa" id="g5E-tl-36e"/>
+                <outlet property="titleForContent" destination="iWR-oF-cDO" id="iXT-jU-Ctb"/>
+            </connections>
+        </view>
+    </objects>
+</document>

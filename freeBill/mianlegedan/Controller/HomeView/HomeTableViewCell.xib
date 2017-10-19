@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="233" id="KGk-i7-Jjw" customClass="HomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="232.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeImg" translatesAutoresizingMaskIntoConstraints="NO" id="LCV-zo-sav">
+                        <rect key="frame" x="0.0" y="0.0" width="435" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="Dlo-Tf-xJi"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSA-cg-gFH">
+                        <rect key="frame" x="10" y="207" width="215" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="LGY-Oj-kO5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.45876898599999999" blue="0.1426460682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-aS-ttV">
+                        <rect key="frame" x="225" y="206.5" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6wt-Hb-qah"/>
+                            <constraint firstAttribute="width" constant="200" id="HE0-eu-7he"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sbm-aS-ttV" firstAttribute="leading" secondItem="PSA-cg-gFH" secondAttribute="trailing" id="6n8-cq-PVj"/>
+                    <constraint firstItem="PSA-cg-gFH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="BWJ-ba-ZcA"/>
+                    <constraint firstAttribute="bottom" secondItem="PSA-cg-gFH" secondAttribute="bottom" constant="5" id="V2j-K1-R7G"/>
+                    <constraint firstAttribute="trailing" secondItem="sbm-aS-ttV" secondAttribute="trailing" constant="10" id="XD3-ay-soM"/>
+                    <constraint firstItem="LCV-zo-sav" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dpN-KB-UR4"/>
+                    <constraint firstItem="LCV-zo-sav" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kFq-OW-0EF"/>
+                    <constraint firstAttribute="bottom" secondItem="sbm-aS-ttV" secondAttribute="bottom" constant="5" id="ohb-n9-GWX"/>
+                    <constraint firstAttribute="trailing" secondItem="LCV-zo-sav" secondAttribute="trailing" id="pm4-e6-anr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="goodsImg" destination="LCV-zo-sav" id="bQf-AI-ZR8"/>
+                <outlet property="goodsNameLb" destination="sbm-aS-ttV" id="Nda-zQ-HzC"/>
+                <outlet property="goodsPriceLb" destination="PSA-cg-gFH" id="djx-J6-nQx"/>
+            </connections>
+            <point key="canvasLocation" x="40.5" y="-80.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeImg" width="90" height="90"/>
+    </resources>
+</document>
